@@ -1,0 +1,27 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a
+      (click)="selectTab('images')"
+      class="nav-link active"
+      [ngClass]="{ active: selectedTab === 'images' }"
+      aria-current="page"
+      >Images</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      (click)="selectTab('settings')"
+      class="nav-link"
+      [ngClass]="{ active: selectedTab === 'settings' }"
+      >Settings</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      (click)="selectTab('about')"
+      class="nav-link"
+      [ngClass]="{ active: selectedTab === 'about' }"
+      >About</a
+    >
+  </li>
+</ul>

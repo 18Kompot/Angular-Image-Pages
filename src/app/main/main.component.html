@@ -1,0 +1,8 @@
+<div class="container mt-2">
+  <app-tabs (onTabClick)="selectTab($event)"></app-tabs>
+  <app-images *ngIf="selectedTab === 'images'"></app-images>
+  <app-settings *ngIf="selectedTab === 'settings'"></app-settings>
+  <app-about *ngIf="selectedTab === 'about'"></app-about>
+  <!-- <app-observable></app-observable> -->
+</div>
+<!-- <app-card *ngFor="let img of imagesArr" [card]="img"></app-card> -->

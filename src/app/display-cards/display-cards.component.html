@@ -1,0 +1,37 @@
+<!-- <h4
+  (click)="isBordered = !isBordered"
+  [ngClass]="{ bordered: isBordered }"
+  [ngStyle]="myStyle"
+  class="mt-3 text-center"
+>
+  All images
+</h4> -->
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <app-card
+    *ngFor="let cardElement of imagesArr; let i = index"
+    [card]="cardElement"
+  ></app-card>
+</div>
+
+<!-- [style.background-color]="color" -->
+
+<!-- COLOR PICKER -->
+
+<!-- <div class="ui input">
+  <input type="color" name="color" value="{{ color }}" #colorinput />
+</div>
+<div class="ui input">
+  <input type="text" name="fontSize" value="{{ fontSize }}" #fontinput />
+</div>
+<button
+  class="ui primary button"
+  (click)="apply(colorinput.value, fontinput.value)"
+>
+  Apply settings
+</button>
+
+<div>
+  <span [ngStyle]="{ color: color }" [style.font-size.px]="fontSize">
+    {{ color }} text
+  </span>
+</div> -->
